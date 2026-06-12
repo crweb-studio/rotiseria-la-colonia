@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Carrito - Rotisería La Colonia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/estilos.css">
+</head>
+<body>
+
+    <!-- navbar dinamica -->
+    <nav class="navbar"></nav>
+
+    <main class="main-content">
+        <h1>Mi Carrito</h1>
+
+        <!-- caja del carrito -->
+        <div class="carrito-wrapper">
+            <div id="carrito-contenedor"></div>
+            <div id="total-carrito" class="total-carrito"></div>
+        </div>
+
+        <!-- BOTÓN FINALIZAR COMPRA -->
+        <button id="btn-finalizar" class="btn-finalizar">Finalizar compra</button>
+
+        <!-- MODAL PARA ELEGIR FORMA DE PAGO -->
+        <div id="modal-pago" class="modal">
+            <div class="modal-contenido">
+                <h3>🍕 Confirmar pedido</h3>
+
+                <form id="form-pago">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" required>
+
+                    <p class="titulo-seccion">Tipo de entrega:</p>
+
+                    <label>
+                        <input type="radio" name="entrega" value="Retiro en local" required>
+                        Retiro en local
+                    </label>
+
+                    <label>
+                        <input type="radio" name="entrega" value="Delivery" required>
+                        Delivery ($500)
+                    </label>
+
+                    <div id="campo-direccion" style="display:none;">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion">
+                    </div>
+
+                    <p class="titulo-seccion">Forma de pago:</p>
+
+                    <label>
+                        <input type="radio" name="pago" value="Efectivo" required>
+                        Efectivo
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="pago" value="Transferencia" required>
+                        Transferencia
+                    </label>
+
+                    <label>
+                        <input type="radio" name="pago" value="Tarjeta" required>
+                        Tarjeta
+                    </label>
+
+                    <label for="observaciones">Observaciones:</label>
+                    <textarea id="observaciones" rows="3"></textarea>
+
+                    <button type="submit" class="btn-confirmar-pago">
+                        Confirmar Pedido
+                    </button>
+
+                    <button type="button" class="btn-cancelar" onclick="cerrarModal()">
+                        Cancelar
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- scripts -->
+    <script src="../js/login.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/carrito.js"></script>
+
+    <!-- script del modal -->
+    <script src="../js/pago.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            generarNavbar();
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+
+            <!-- contacto -->
+            <div class="footer-section contacto">
+                <h3>Contacto</h3>
+                <p>
+                    <a href="mailto:larotiseria@email.com">
+                        <img src="../assets/imagenes/icono-correo.png" alt="Correo" class="icono-footer"> 
+                        larotiseria@email.com
+                    </a>
+                </p>
+                <p>
+                    <a href="https://wa.me/3518112819" target="_blank">
+                        <img src="../assets/imagenes/icono-wsp.png" alt="WhatsApp" class="icono-footer"> 
+                        WhatsApp: 3518112819
+                    </a>
+                </p>
+            </div>
+
+            <!-- redes sociales -->
+            <div class="footer-section redes">
+                <h3>Redes Sociales</h3>
+                <p>
+                    <a href="https://www.instagram.com/roti.lacolonia?igsh=bTMxNW1xaW00Yzlr" target="_blank">
+                        <img src="../assets/imagenes/icono-instagram.png" alt="Instagram" class="icono-footer"> Instagram
+                    </a>
+                </p>
+            </div>
+
+            <!-- ubicacion y horarios -->
+            <div class="footer-section ubicacion">
+                <h3>Ubicación & Horarios</h3>
+                <p>
+                    <img src="../assets/imagenes/icono-ubicacion.png" alt="Ubicación" class="icono-footer"> 
+                    Tulumba 1332, Barrio Miralta
+                </p>
+                <p>Horario de atención: jueves a domingos, 19:00 - 00:00 hs</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Rotisería La Colonia | Hacemos tu noche más deliciosa 😋</p>
+        </div>
+    </footer>
+
+</body>
+</html>

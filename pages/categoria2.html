@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pizzas - Rotisería La Colonia</title>
+    <meta name="description" content="Variedad de pizzas caseras de Rotisería La Colonia">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/estilos.css">
+</head>
+<body>
+
+    <!-- navbar dinamica -->
+    <nav class="navbar"></nav>
+
+    <main class="main-content">
+        <h1>Pizzas Artesanales</h1>
+        <p>Preparadas con masa casera, salsa de tomate natural y los mejores ingredientes 🍕</p>
+
+        <!-- las cards se generaran desde JS -->
+        <div class="productos"></div>
+    </main>
+
+    <!-- scripts -->
+    <script src="../js/login.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/cards.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            checkLogin();          // verifico si el usuario esta logueado
+            generarNavbar();       // genero la navbar dinamica
+
+        });
+    </script>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+
+            <!-- contacto -->
+            <div class="footer-section contacto">
+                <h3>Contacto</h3>
+                <p>
+                    <a href="mailto:larotiseria@email.com">
+                        <img src="../assets/imagenes/icono-correo.png" alt="Correo" class="icono-footer"> 
+                        larotiseria@email.com
+                    </a>
+                </p>
+                <p>
+                    <a href="https://wa.me/3518112819" target="_blank">
+                        <img src="../assets/imagenes/icono-wsp.png" alt="WhatsApp" class="icono-footer"> 
+                        WhatsApp: 3518112819
+                    </a>
+                </p>
+            </div>
+
+            <!-- redes sociales -->
+            <div class="footer-section redes">
+                <h3>Redes Sociales</h3>
+                <p>
+                    <a href="https://www.instagram.com/roti.lacolonia?igsh=bTMxNW1xaW00Yzlr" target="_blank">
+                        <img src="../assets/imagenes/icono-instagram.png" alt="Instagram" class="icono-footer"> Instagram
+                    </a>
+                </p>
+            </div>
+
+            <!-- ubicacion y horarios -->
+            <div class="footer-section ubicacion">
+                <h3>Ubicación & Horarios</h3>
+                <p>
+                    <img src="../assets/imagenes/icono-ubicacion.png" alt="Ubicación" class="icono-footer"> 
+                    Av. Principal 123, Ciudad
+                </p>
+                <p>Horario de atención: jueves a domingos, 19:00 - 00:00 hs</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Rotisería La Colonia | Hacemos tu noche más deliciosa 😋</p>
+        </div>
+    </footer>
+</body>
+</html>

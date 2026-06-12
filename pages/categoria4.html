@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hamburguesas - Rotisería La Colonia</title>
+    <meta name="description" content="Variedad de hamburguesas caseras de Rotisería La Colonia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/estilos.css">
+</head>
+<body>
+
+    <!-- navbar dinámica -->
+    <nav class="navbar"></nav>
+
+    <main class="main-content">
+        <h1>Hamburguesas Artesanales</h1>
+        <p>Hamburguesas caseras con ingredientes frescos y mucho sabor 🍔</p>
+
+        <!-- cards -->
+        <div class="productos"></div>
+    </main>
+
+    <!-- scripts -->
+    <script src="../js/login.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/cards.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (typeof checkLogin === "function") checkLogin();
+            generarNavbar();
+        });
+    </script>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-section contacto">
+                <h3>Contacto</h3>
+                <p>
+                    <a href="mailto:larotiseria@email.com">
+                        <img src="../assets/imagenes/icono-correo.png" class="icono-footer">
+                        larotiseria@email.com
+                    </a>
+                </p>
+                <p>
+                    <a href="https://wa.me/3518112819" target="_blank">
+                        <img src="../assets/imagenes/icono-wsp.png" class="icono-footer">
+                        WhatsApp: 3518112819
+                    </a>
+                </p>
+            </div>
+
+            <div class="footer-section redes">
+                <h3>Redes Sociales</h3>
+                <p>
+                    <a href="https://www.instagram.com/roti.lacolonia?igsh=bTMxNW1xaW00Yzlr" target="_blank">
+                        <img src="../assets/imagenes/icono-instagram.png" class="icono-footer">
+                        Instagram
+                    </a>
+                </p>
+            </div>
+
+            <div class="footer-section ubicacion">
+                <h3>Ubicación & Horarios</h3>
+                <p>
+                    <img src="../assets/imagenes/icono-ubicacion.png" class="icono-footer">
+                    Tulumba 1332, Barrio Miralta
+                </p>
+                <p>Horario de atención: jueves a domingos, 19:00 - 00:00 hs</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Rotisería La Colonia | Hacemos tu noche más deliciosa 😋</p>
+        </div>
+    </footer>
+
+</body>
+</html>

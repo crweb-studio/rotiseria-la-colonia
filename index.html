@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rotisería La Colonia</title>
+    <meta name="description" content="Página principal de la Rotisería La Colonia">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/estilos.css">
+</head>
+<body>
+
+    <!-- navbar dinamica -->
+    <nav class="navbar"></nav>
+
+    <!-- contenido principal -->
+    <main class="main-content">
+        <h1>Rotisería La Colonia</h1>
+        <p>Somos una rotisería barrial dedicada a la venta de comidas caseras por encargo.</p>
+
+        <!-- muestro las categorias -->
+        <div class="productos"></div>
+
+        <!-- productos destacados por categoria -->
+        <h2>Pizzas Destacadas</h2>
+        <div id="pizzas-destacadas" class="productos"></div>
+        <div class="ver-mas">
+            <a href="pages/categoria2.html" class="btn-ver-mas">Ver más Pizzas</a>
+        </div>
+
+        <h2>Empanadas Destacadas</h2>
+        <div id="empanadas-destacadas" class="productos"></div>
+        <div class="ver-mas">
+            <a href="pages/categoria1.html" class="btn-ver-mas">Ver más Empanadas</a>
+        </div>
+
+        <h2>Papas Destacadas</h2>
+        <div id="papas-destacadas" class="productos"></div>
+        <div class="ver-mas">
+            <a href="pages/categoria3.html" class="btn-ver-mas">Ver más Papas</a>
+        </div>
+        
+    </main>
+
+    <!-- scripts -->
+    <script src="js/login.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/cards.js"></script>
+
+    <script>
+        // array de categorias mostradas en el Home
+        const categoriasIndex = [
+            {
+                titulo: "Empanadas",
+                link: "pages/categoria1.html",
+                descripcion: "Deliciosas empanadas caseras recién horneadas."
+            },
+            {
+                titulo: "Pizzas",
+                link: "pages/categoria2.html",
+                descripcion: "Pizzas grandes con ingredientes frescos y sabrosos."
+            },
+            {
+                titulo: "Papas",
+                link: "pages/categoria3.html",
+                descripcion: "Deliciosas opciones para acompañar tus comidas favoritas."
+            },
+            {
+                titulo: "Hamburguesas",
+                link: "pages/categoria4.html",
+                descripcion: "Opciones irresistibles para disfrutar en cada bocado."
+            },
+            {
+                titulo: "Tortillas",
+                link: "pages/categoria5.html",
+                descripcion: "Tortillas de papa caseras, doradas y llenas de sabor."
+            }
+        ];
+
+        // funcion para generar las cards de categorias
+        function generarCategoriasIndex() {
+            const contenedor = document.querySelector(".productos");
+            if (!contenedor) return;
+
+            contenedor.innerHTML = "";
+
+            categoriasIndex.forEach(c => {
+                const card = document.createElement("a");
+                card.classList.add("card");
+                card.href = c.link;
+                card.innerHTML = `
+                    <h3>${c.titulo}</h3>
+                    <p>${c.descripcion}</p>
+                `;
+                contenedor.appendChild(card);
+            });
+        }
+
+        // cuando la pagina carga
+        document.addEventListener("DOMContentLoaded", function() {
+            generarNavbar();          // navbar dinamica
+            generarCategoriasIndex(); // genera las cards de categorias
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+
+            <!-- contacto -->
+            <div class="footer-section contacto">
+                <h3>Contacto</h3>
+                <p>
+                    <a href="mailto:larotiseria@email.com">
+                        <img src="assets/imagenes/icono-correo.png" alt="Correo" class="icono-footer"> 
+                        larotiseria@email.com
+                    </a>
+                </p>
+                <p>
+                    <a href="https://wa.me/3518112819" target="_blank">
+                        <img src="assets/imagenes/icono-wsp.png" alt="WhatsApp" class="icono-footer"> 
+                        WhatsApp: 3518112819
+                    </a>
+                </p>
+            </div>
+
+            <!-- redes sociales -->
+            <div class="footer-section redes">
+                <h3>Redes Sociales</h3>
+                <p>
+                    <a href="https://www.instagram.com/roti.lacolonia?igsh=bTMxNW1xaW00Yzlr" target="_blank">
+                        <img src="assets/imagenes/icono-instagram.png" alt="Instagram" class="icono-footer"> Instagram
+                    </a>
+                </p>
+            </div>
+
+            <!-- ubicacion y horarios -->
+            <div class="footer-section ubicacion">
+                <h3>Ubicación & Horarios</h3>
+                <p>
+                    <img src="assets/imagenes/icono-ubicacion.png" alt="Ubicación" class="icono-footer"> 
+                    Tulumba 1332, Barrio Miralta
+                </p>
+                <p>Horario de atención: jueves a domingos, 19:00 - 00:00 hs</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Rotisería La Colonia | Hacemos tu noche más deliciosa 😋</p>
+        </div>
+    </footer>
+
+</body>
+</html>

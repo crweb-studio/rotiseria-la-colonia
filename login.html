@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login - Rotisería La Colonia</title>
+    <meta name="description" content="Inicio de sesión de usuario">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/estilos.css">
+</head>
+<body>
+    <main class="registro-main">
+        <div class="registro-card">
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <label for="usuario">Usuario o Email:</label>
+                <input type="email" id="usuario" name="usuario" placeholder="Ingrese su usuario o Correo" required>
+
+                <label for="clave">Contraseña:</label>
+                <input type="password" id="clave" name="clave" placeholder="Ingrese su contraseña" required>
+
+                <button type="submit">Ingresar</button>
+            </form>
+            <p>¿No tenés cuenta? <a href="pages/registro.html">Registrate aquí</a></p>
+        </div>
+    </main>
+
+    <script src="js/login.js"></script>
+    <script>
+        checkLogin(); // reviso si hay usario logeado
+    </script>
+</body>
+</html>
