@@ -85,6 +85,17 @@ document.getElementById("form-pago").addEventListener("submit", async function (
         // reemplazar por el número real de la rotisería
         const numeroRotiseria = "5493518112819";
 
+        let datosEntrega = "";
+
+        if (tipoEntrega === "Delivery") {
+            datosEntrega =
+        `*Tipo de entrega:* Delivery
+        *Dirección:* ${direccion}`;
+        } else {
+            datosEntrega =
+        `*Tipo de entrega:* Retiro en el local`;
+        }
+
         const mensaje =
         `*NUEVO PEDIDO - ROTISERÍA LA COLONIA*
 
@@ -92,7 +103,7 @@ document.getElementById("form-pago").addEventListener("submit", async function (
 
         *Cliente:* ${nombre}
         *Teléfono:* ${telefono}
-        *Dirección:* ${direccion}
+        ${datosEntrega}
 
         *PRODUCTOS:*
         ${productosTexto}
