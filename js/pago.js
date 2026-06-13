@@ -53,13 +53,24 @@ document.getElementById("form-pago").addEventListener("submit", async function (
                 }
 
             } else {
-                subtotal = producto.precio * item.cantidad;
+                let precioUnitario = producto.precio;
+
+                if (item.extraJQ) {
+                    precioUnitario += 500;
+                }
+
+                subtotal = precioUnitario * item.cantidad;
             }
 
             total += subtotal;
 
+            let nombreProducto = producto.titulo;
+            if (item.extraJQ) {
+                nombreProducto += " + Jamón y Queso";
+            }
+
             productosTexto +=
-                `• ${producto.titulo} x${item.cantidad} - $${subtotal.toLocaleString("es-AR")}\n`;
+                `• ${nombreProducto} x${item.cantidad} - $${subtotal.toLocaleString("es-AR")}\n`;
         });
 
         // costo de entrega
