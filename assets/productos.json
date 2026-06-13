@@ -55,7 +55,7 @@
         "categoria": "Papas",
         "titulo": "Porción de Papas",
         "descripcion": "Papas fritas doradas y crujientes, recién hechas.",
-        "precio": 3500,
+        "precio": 4000,
         "imagen": "assets/imagenes/papas.png"
     },
     {
@@ -63,7 +63,7 @@
         "categoria": "Papas",
         "titulo": "Porción de Papas con Huevo",
         "descripcion": "Papas fritas mezcladas con huevo revuelto, una combinación clásica y deliciosa.",
-        "precio": 5500,
+        "precio": 6000,
         "imagen": "assets/imagenes/papas-huevo.png"
     },
     {
@@ -79,7 +79,7 @@
         "categoria": "Papas",
         "titulo": "Porción de Papas con Albondiguitas",
         "descripcion": "Papas fritas acompañadas de albondiguitas caseras, una combinación abundante y deliciosa.",
-        "precio": 5000,
+        "precio": 5500,
         "imagen": "assets/imagenes/papas-albondigas.png"
     },
     {
@@ -87,7 +87,7 @@
         "categoria": "Papas",
         "titulo": "Salchipapa",
         "descripcion": "Porción de papas fritas con salchichas, sabor clásico y casero.",
-        "precio": 4500,
+        "precio": 5000,
         "imagen": "assets/imagenes/salchipapa.png"
     },
     {
