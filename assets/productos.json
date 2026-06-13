@@ -69,21 +69,13 @@
     {
         "id": 9,
         "categoria": "Papas",
-        "titulo": "Porción de Papas con Cheddar",
-        "descripcion": "Papas cubiertas con queso cheddar fundido, irresistibles.",
-        "precio": 6000,
-        "imagen": "assets/imagenes/papas-cheddar.png"
-    },
-    {
-        "id": 10,
-        "categoria": "Papas",
         "titulo": "Porción de Papas con Albondiguitas",
         "descripcion": "Papas fritas acompañadas de albondiguitas caseras, una combinación abundante y deliciosa.",
         "precio": 5500,
         "imagen": "assets/imagenes/papas-albondigas.png"
     },
     {
-        "id": 11,
+        "id": 10,
         "categoria": "Papas",
         "titulo": "Salchipapa",
         "descripcion": "Porción de papas fritas con salchichas, sabor clásico y casero.",
@@ -91,7 +83,7 @@
         "imagen": "assets/imagenes/salchipapa.png"
     },
     {
-        "id": 12,
+        "id": 11,
         "categoria": "Hamburguesas",
         "titulo": "Hamburguesa Clasica",
         "descripcion": "Simple con lechuga, tomate, huevo y porcion de papas.",
@@ -99,7 +91,7 @@
         "imagen": "assets/imagenes/hamburguesa-clasica.png"
     },
     {
-        "id": 13,
+        "id": 12,
         "categoria": "Hamburguesas",
         "titulo": "Hamburguesa Doble",
         "descripcion": "Doble con lechuga, tomate, huevo y porcion de papas.",
@@ -107,7 +99,7 @@
         "imagen": "assets/imagenes/hamburguesa-doble.png"
     },
     {
-        "id": 14,
+        "id": 13,
         "categoria": "Hamburguesas",
         "titulo": "Hamburguesa Triple",
         "descripcion": "Triple con lechuga, tomate, huevo y porcion de papas.",
@@ -115,7 +107,7 @@
         "imagen": "assets/imagenes/hamburguesa-triple.png"
     },
     {
-        "id": 15,
+        "id": 14,
         "categoria": "Tortillas",
         "titulo": "Tortilla de papa con Queso",
         "descripcion": "Tortilla de papa con mucho queso fundido, ideal para compartir.",
@@ -123,7 +115,7 @@
         "imagen": "assets/imagenes/tortilla-queso.png"
     },
     {
-        "id": 16,
+        "id": 15,
         "categoria": "Tortillas",
         "titulo": "Tortilla de papa Rellena",
         "descripcion": "Tortilla de papa rellena con jamón y queso, dorada y bien casera.",
