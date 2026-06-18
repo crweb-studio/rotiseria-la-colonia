@@ -111,7 +111,7 @@
         "categoria": "Tortillas",
         "titulo": "Tortilla de papa con Queso",
         "descripcion": "Tortilla de papa con mucho queso fundido, ideal para compartir.",
-        "precio": 7000,
+        "precio": 8000,
         "imagen": "assets/imagenes/tortilla-queso.png"
     },
     {
@@ -119,7 +119,7 @@
         "categoria": "Tortillas",
         "titulo": "Tortilla de papa Rellena",
         "descripcion": "Tortilla de papa rellena con jamón y queso, dorada y bien casera.",
-        "precio": 8000,
+        "precio": 9000,
         "imagen": "assets/imagenes/tortilla-rellena.png"
     }
 ]
