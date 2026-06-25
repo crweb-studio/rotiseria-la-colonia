@@ -52,6 +52,14 @@
     },
     {
         "id": 7,
+        "categoria": "Pizzas",
+        "titulo": "Pizza con Jamon y huevo",
+        "descripcion": "Pizza con salsa de tomate, mozzarella y abundante huevo y jamon.",
+        "precio": 9000,
+        "imagen": "assets/imagenes/pizza-jamon-huevo.png"
+    },
+    {
+        "id": 8,
         "categoria": "Papas",
         "titulo": "Porción de Papas",
         "descripcion": "Papas fritas doradas y crujientes, recién hechas.",
@@ -59,7 +67,7 @@
         "imagen": "assets/imagenes/papas.png"
     },
     {
-        "id": 8,
+        "id": 9,
         "categoria": "Papas",
         "titulo": "Porción de Papas con Huevo",
         "descripcion": "Papas fritas mezcladas con huevo revuelto, una combinación clásica y deliciosa.",
@@ -67,7 +75,7 @@
         "imagen": "assets/imagenes/papas-huevo.png"
     },
     {
-        "id": 9,
+        "id": 10,
         "categoria": "Papas",
         "titulo": "Porción de Papas con Albondiguitas",
         "descripcion": "Papas fritas acompañadas de albondiguitas caseras, una combinación abundante y deliciosa.",
@@ -75,7 +83,7 @@
         "imagen": "assets/imagenes/papas-albondigas.png"
     },
     {
-        "id": 10,
+        "id": 11,
         "categoria": "Papas",
         "titulo": "Salchipapa",
         "descripcion": "Porción de papas fritas con salchichas, sabor clásico y casero.",
@@ -83,7 +91,7 @@
         "imagen": "assets/imagenes/salchipapa.png"
     },
     {
-        "id": 11,
+        "id": 12,
         "categoria": "Hamburguesas",
         "titulo": "Hamburguesa Clasica",
         "descripcion": "Simple con lechuga, tomate, huevo y porcion de papas.",
@@ -91,7 +99,7 @@
         "imagen": "assets/imagenes/hamburguesa-clasica.png"
     },
     {
-        "id": 12,
+        "id": 13,
         "categoria": "Hamburguesas",
         "titulo": "Hamburguesa Doble",
         "descripcion": "Doble con lechuga, tomate, huevo y porcion de papas.",
@@ -99,7 +107,7 @@
         "imagen": "assets/imagenes/hamburguesa-doble.png"
     },
     {
-        "id": 13,
+        "id": 14,
         "categoria": "Hamburguesas",
         "titulo": "Hamburguesa Triple",
         "descripcion": "Triple con lechuga, tomate, huevo y porcion de papas.",
@@ -107,7 +115,7 @@
         "imagen": "assets/imagenes/hamburguesa-triple.png"
     },
     {
-        "id": 14,
+        "id": 15,
         "categoria": "Tortillas",
         "titulo": "Tortilla de papa con Queso",
         "descripcion": "Tortilla de papa con mucho queso fundido, ideal para compartir.",
@@ -115,7 +123,7 @@
         "imagen": "assets/imagenes/tortilla-queso.png"
     },
     {
-        "id": 15,
+        "id": 16,
         "categoria": "Tortillas",
         "titulo": "Tortilla de papa Rellena",
         "descripcion": "Tortilla de papa rellena con jamón y queso, dorada y bien casera.",
