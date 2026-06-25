@@ -4,7 +4,7 @@
         "categoria": "Empanadas",
         "titulo": "Empanada Árabe",
         "descripcion": "Carne, cebolla y tomate con especias, en masa fina y sabor casero.",
-        "precio": 9000,
+        "precio": 9500,
         "detallePrecio": "Precio por docena",
         "imagen": "assets/imagenes/empanadas-arabes.png"
     },
@@ -13,7 +13,7 @@
         "categoria": "Empanadas",
         "titulo": "Empanada Criolla",
         "descripcion": "Clásica argentina con carne, cebolla, pimiento y huevo duro.",
-        "precio": 9000,
+        "precio": 9500,
         "detallePrecio": "Precio por docena",
         "imagen": "assets/imagenes/empanadas-criollas.png"
     },
@@ -22,7 +22,7 @@
         "categoria": "Empanadas",
         "titulo": "Empanada de Jamón y Queso",
         "descripcion": "Jamón cocido y queso fundido, sabor suave y clásico.",
-        "precio": 9000,
+        "precio": 9500,
         "detallePrecio": "Precio por docena",
         "imagen": "assets/imagenes/empanadas-jamonyqueso.png"
     },
@@ -31,7 +31,7 @@
         "categoria": "Pizzas",
         "titulo": "Pizza Muzarella",
         "descripcion": "Clásica pizza con salsa de tomate, abundante queso y orégano.",
-        "precio": 6000,
+        "precio": 6500,
         "imagen": "assets/imagenes/pizza-muzza.png"
     },
     {
@@ -39,7 +39,7 @@
         "categoria": "Pizzas",
         "titulo": "Pizza con Huevo",
         "descripcion": "Base de muzzarella clásica con huevo rallado por encima, suave y sabrosa.",
-        "precio": 6500,
+        "precio": 7000,
         "imagen": "assets/imagenes/pizza-huevo.png"
     },
     {
@@ -47,7 +47,7 @@
         "categoria": "Pizzas",
         "titulo": "Pizza con Jamon",
         "descripcion": "Pizza con salsa de tomate, mozzarella y abundante jamón.",
-        "precio": 7500,
+        "precio": 8500,
         "imagen": "assets/imagenes/pizza-jamon.png"
     },
     {
@@ -87,7 +87,7 @@
         "categoria": "Hamburguesas",
         "titulo": "Hamburguesa Clasica",
         "descripcion": "Simple con lechuga, tomate, huevo y porcion de papas.",
-        "precio": 6000,
+        "precio": 6500,
         "imagen": "assets/imagenes/hamburguesa-clasica.png"
     },
     {
@@ -95,7 +95,7 @@
         "categoria": "Hamburguesas",
         "titulo": "Hamburguesa Doble",
         "descripcion": "Doble con lechuga, tomate, huevo y porcion de papas.",
-        "precio": 7000,
+        "precio": 7500,
         "imagen": "assets/imagenes/hamburguesa-doble.png"
     },
     {
@@ -103,7 +103,7 @@
         "categoria": "Hamburguesas",
         "titulo": "Hamburguesa Triple",
         "descripcion": "Triple con lechuga, tomate, huevo y porcion de papas.",
-        "precio": 8000,
+        "precio": 8500,
         "imagen": "assets/imagenes/hamburguesa-triple.png"
     },
     {
