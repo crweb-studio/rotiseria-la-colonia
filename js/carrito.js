@@ -63,8 +63,8 @@ function mostrarCarrito() {
             const docenas = Math.floor(cantidad / 12);
             const resto = cantidad % 12;
 
-            // docenas completas (12 = 9000)
-            subtotal = docenas * 9000;
+            // docenas completas (12 = 9500)
+            subtotal = docenas * 9500;
 
             // media docena (6 = 5000)
             if (resto === 6) {

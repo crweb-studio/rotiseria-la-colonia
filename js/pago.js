@@ -47,7 +47,7 @@ document.getElementById("form-pago").addEventListener("submit", async function (
                 const docenas = Math.floor(cantidad / 12);
                 const resto = cantidad % 12;
 
-                subtotal = docenas * 9000;
+                subtotal = docenas * 9500;
                 if (resto === 6) {
                     subtotal += 5000;
                 }
